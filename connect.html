@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connect – Your Name</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Your<span>Name</span></a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="connect.html" aria-current="page">Connect</a>
+      <a href="play.html">Play</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
+  </div>
+</header>
+
+<div class="page-title">
+  <div class="wrap"><h1>Connect with me</h1><p>Send a request by email or join me on WhatsApp.</p></div>
+</div>
+
+<main>
+  <section class="wrap">
+    <div class="grid">
+      <div class="card reveal">
+        <h2>Send a request</h2>
+        <form id="request-form" novalidate>
+          <label>Your name <input type="text" name="name" autocomplete="name"><span class="error"></span></label>
+          <label>Your email <input type="email" name="email" autocomplete="email"><span class="error"></span></label>
+          <label>Your request <textarea name="message"></textarea><span class="error"></span></label>
+          <button class="btn dark solid" type="submit">Open in my email</button>
+          <p class="status" id="form-status" role="status"></p>
+        </form>
+      </div>
+
+      <div class="card reveal">
+        <h2>WhatsApp</h2>
+        <h3 class="sub">Channels</h3>
+        <div class="wa-list">
+          <!-- Replace each # with your real WhatsApp channel link -->
+          <a class="wa-link" href="#" target="_blank" rel="noopener"><i>C</i><span><b>My main channel</b><small>News and updates</small></span></a>
+          <a class="wa-link" href="#" target="_blank" rel="noopener"><i>C</i><span><b>Second channel</b><small>Tips and lessons</small></span></a>
+        </div>
+        <h3 class="sub">Contacts</h3>
+        <div class="wa-list">
+          <!-- Format: https://wa.me/COUNTRYCODE+NUMBER (digits only) -->
+          <a class="wa-link" href="https://wa.me/15551234567" target="_blank" rel="noopener"><i>W</i><span><b>Chat with me</b><small>Personal number</small></span></a>
+          <a class="wa-link" href="https://wa.me/15557654321" target="_blank" rel="noopener"><i>W</i><span><b>Business contact</b><small>Orders and requests</small></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="year">2026</span> Your Name</div></footer>
+<script src="script.js"></script>
+</body>
+</html>

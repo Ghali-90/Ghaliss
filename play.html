@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play – Your Name</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Your<span>Name</span></a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="connect.html">Connect</a>
+      <a href="play.html" aria-current="page">Play</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
+  </div>
+</header>
+
+<div class="page-title">
+  <div class="wrap"><h1>Play and chat</h1><p>Solve the puzzle, or say hello in the chat box.</p></div>
+</div>
+
+<main>
+  <section class="wrap">
+    <div class="play">
+      <div class="card reveal">
+        <h2>Number puzzle</h2>
+        <p>Slide the tiles until they are in order from 1 to 8.</p>
+        <div class="puzzle" id="puzzle" aria-label="Sliding puzzle"></div>
+        <div class="game-bar">
+          <span>Moves: <b id="moves">0</b></span>
+          <button class="btn dark" id="shuffle" type="button">Shuffle</button>
+        </div>
+        <p class="status" id="win" role="status"></p>
+        <div class="btns"><button class="btn dark" type="button" onclick="openRunner()">Play the runner game</button></div>
+      </div>
+
+      <div class="card chat reveal">
+        <h2>Chat box</h2>
+        <div class="msgs" id="msgs" aria-live="polite"></div>
+        <form id="chat-form">
+          <input id="chat-input" type="text" placeholder="Type a message…" aria-label="Message" autocomplete="off">
+          <button class="btn dark solid" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="year">2026</span> Your Name</div></footer>
+<script src="script.js"></script>
+</body>
+</html>

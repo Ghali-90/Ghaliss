@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name – Profile</title>
+<meta name="description" content="Profile of Your Name.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Your<span>Name</span></a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="connect.html">Connect</a>
+      <a href="play.html">Play</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="orb a"></div><div class="orb b"></div>
+  <div class="wrap">
+    <div>
+      <h1>Hi, I'm <em>Your Name</em>.</h1>
+      <p>I am a <span class="typed" id="typed" data-words='["creator","teacher","developer","storyteller"]'></span></p>
+      <p>Write one short line about who you are and what people can come to you for.</p>
+      <div class="btns">
+        <a class="btn solid" href="connect.html">Send a request</a>
+        <a class="btn" href="play.html">Play a game</a>
+      </div>
+    </div>
+    <!-- Put your picture in this folder and name it photo.jpg -->
+    <div class="photo">
+      <img src="photo.jpg" alt="Photo of Your Name" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar-fallback',textContent:'YN'}))">
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="wrap">
+    <div class="grid">
+      <div class="card reveal">
+        <h2>My bio</h2>
+        <p>Write your story here in three or four sentences: where you come from, what you do, what you love, and what you are working on now.</p>
+        <div class="tags"><span>Skill one</span><span>Skill two</span><span>Skill three</span><span>Skill four</span></div>
+      </div>
+      <div class="card reveal">
+        <h2>My information</h2>
+        <dl>
+          <dt>Location</dt><dd>City, Country</dd>
+          <dt>Work</dt><dd>Your job or study</dd>
+          <dt>Languages</dt><dd>English, ...</dd>
+          <dt>Email</dt><dd>you@example.com</dd>
+          <dt>Available</dt><dd>Mon–Fri, 9am–5pm</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="year">2026</span> Your Name</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
